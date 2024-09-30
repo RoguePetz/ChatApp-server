@@ -39,7 +39,6 @@ try {
 
     // Respond with the saved item
     res.json({success:'user saved'})
-    res.status(201).json(savedUser);
 } catch (err) {
     res.status(500).json({ error: 'username/email/password exist' });
 }

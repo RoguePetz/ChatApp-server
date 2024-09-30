@@ -7,7 +7,7 @@ const userRoutes = require('./routes/userRoutes');
 const User = require('./models/user');
 const Post = require('./models/post');
 const bcrypt = require('bcryptjs');
-
+require('dotenv').config();
 
 
 const userRoute = require('./routes/userRoutes');

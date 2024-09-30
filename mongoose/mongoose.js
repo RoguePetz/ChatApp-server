@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const mongoURI = 'mongodb://localhost:27017/chat-app';
+require('dotenv').config();
+const mongoURI = process.env.ATLAS;
 
 
 const connectDB = async () => {
@@ -8,7 +9,7 @@ const connectDB = async () => {
         useUnifiedTopology: true,
         })
         .then(() => {
-          console.log('MongoDB connected...');
+          console.log('MongoDB connected...',);
         })
         .catch(err => console.error(err));
 };
