@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
-const mongoURI = process.env.ATLAS;
+const mongoURI = process.env.LOCALMBD;
 
 
 const connectDB = async () => {
